@@ -13,9 +13,9 @@ export const birthdayConfig = {
   theme: 'royal-red',
 
   /** Date de naissance : c'est elle qui pilote le compteur et les dates */
-  birthDate: '2025-08-28',
+  birthDate: '2025-08-27',
   /** Date du 1er anniversaire (utilisée par le compte à rebours) */
-  birthdayDate: '2026-08-28',
+  birthdayDate: '2026-08-27',
 
   /** Texte affiché tout au début, avant l'apparition du nom */
   introTagline: 'Une histoire a commencé il y a 1 an...',
@@ -140,9 +140,9 @@ export type TimelineStep = {
  * Comme tout part de `birthdayConfig.birthDate`, les dates restent justes
  * même si tu changes la date de naissance.
  *
- *   né le 28 août 2025  →  moisApresNaissance(0)  = 28 août 2025
- *                          moisApresNaissance(1)  = 28 septembre 2025
- *                          moisApresNaissance(12) = 28 août 2026
+ *   né le 27 août 2025  →  moisApresNaissance(0)  = 27 août 2025
+ *                          moisApresNaissance(1)  = 27 septembre 2025
+ *                          moisApresNaissance(12) = 27 août 2026
  */
 const MOIS_FR = [
   'janvier', 'février', 'mars', 'avril', 'mai', 'juin',
@@ -161,7 +161,7 @@ export const timeline: TimelineStep[] = [
   {
     step: 'Naissance',
     title: 'Le jour où tout a commencé 🤍',
-    date: moisApresNaissance(0), // 28 août 2025
+    date: moisApresNaissance(0), // 27 août 2025
     description:
       "Le jour de son arrivée. Un tout petit prince, des tout petits doigts, et une maison entière qui s'illumine.",
     emoji: '🍼',
@@ -170,7 +170,7 @@ export const timeline: TimelineStep[] = [
   {
     step: '1 mois',
     title: 'Les premiers sourires ❤️',
-    date: moisApresNaissance(1), // 28 septembre 2025
+    date: moisApresNaissance(1), // 27 septembre 2025
     description:
       "Un mois déjà. Les premiers regards, les premiers sourires, et ces nuits où on ne dort plus que d'un œil.",
     emoji: '👶',
@@ -179,7 +179,7 @@ export const timeline: TimelineStep[] = [
   {
     step: '3 mois',
     title: 'De nouvelles découvertes ✨',
-    date: moisApresNaissance(3), // 28 novembre 2025
+    date: moisApresNaissance(3), // 27 novembre 2025
     description:
       "Les yeux grands ouverts sur le monde. Chaque bruit, chaque couleur, chaque visage devient une aventure.",
     emoji: '🌟',
@@ -188,7 +188,7 @@ export const timeline: TimelineStep[] = [
   {
     step: '6 mois',
     title: 'Toujours plus de bonheur 🥰',
-    date: moisApresNaissance(6), // 28 février 2026
+    date: moisApresNaissance(6), // 27 février 2026
     description:
       "Des éclats de rire qui remplissent la maison, et des câlins dont on ne se lasse jamais.",
     emoji: '😄',
@@ -197,7 +197,7 @@ export const timeline: TimelineStep[] = [
   {
     step: '9 mois',
     title: 'Petit Prince devient grand 👑',
-    date: moisApresNaissance(9), // 28 mai 2026
+    date: moisApresNaissance(9), // 27 mai 2026
     description:
       "Il s'assoit, il se lève, il explore. Le petit prince prend sa place sur son trône.",
     emoji: '👑',
@@ -206,7 +206,7 @@ export const timeline: TimelineStep[] = [
   {
     step: '12 mois',
     title: '🎉 1 AN ! 🎉',
-    date: moisApresNaissance(12), // 28 août 2026
+    date: moisApresNaissance(12), // 27 août 2026
     description:
       "Une année entière d'amour, de rires et de bénédictions. Le début d'une magnifique histoire.",
     emoji: '🎂',
