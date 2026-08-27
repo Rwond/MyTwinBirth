@@ -1,0 +1,39 @@
+📸 LES PHOTOS DE HM PEACE
+
+Les photos sont rangees dans l ordre de son histoire (de la naissance a 1 an).
+Correspondance avec tes fichiers d origine :
+
+  peace-01.jpg           <-  1 MOIS 1.jpeg
+  peace-02.jpg           <-  1 MOIS 3.jpeg
+  peace-03.jpg           <-  1 MOIS2.jpeg
+  peace-04.jpg           <-  WhatsApp Image 2026-08-23 at 6.53.03 PM.jpeg
+  peace-05.jpg           <-  LUI ET SA SOEUR.jpeg
+  peace-06.jpg           <-  WhatsApp Image 2026-08-23 at 6.53.02 PM (1).jpeg
+  peace-07.jpg           <-  PEACE8.jpeg
+  peace-08.jpg           <-  PEACE7.jpeg
+  peace-09.jpg           <-  WhatsApp Image 2026-08-23 at 6.53.00 PM (1).jpeg
+  peace-10.jpg           <-  WhatsApp Image 2026-08-23 at 6.53.00 PM (2).jpeg
+  peace-11.jpg           <-  WhatsApp Image 2026-08-23 at 6.53.01 PM.jpeg
+  peace-12.jpg           <-  WhatsApp Image 2026-08-23 at 6.53.01 PM (1).jpeg
+  peace-13.jpg           <-  WhatsApp Image 2026-08-23 at 6.52.59 PM (2).jpeg
+  peace-14.jpg           <-  WhatsApp Image 2026-08-23 at 6.52.59 PM.jpeg
+  peace-15.jpg           <-  WhatsApp Image 2026-08-23 at 6.52.59 PM (1).jpeg
+  peace-16.jpg           <-  PEACE9.jpeg
+  peace-17.jpg           <-  PEACE3.jpeg
+  peace-18.jpg           <-  PEACE4.jpeg
+  peace-19.jpg           <-  PEACE2.jpeg
+  peace-20.jpg           <-  WhatsApp Image 2026-08-23 at 6.53.00 PM.jpeg
+  peace-21.jpg           <-  WhatsApp Image 2026-08-23 at 6.53.02 PM.jpeg
+  peace-22.jpg           <-  PEACE.jpeg
+  peace-23.jpg           <-  PEACE6.jpeg
+  peace-24.jpg           <-  PEACE5.jpeg
+  peace-25.jpg           <-  PEACE1.jpeg
+  peace-26.jpg           <-  LUI ET SON FRERE.jpeg
+  peace-27.jpg           <-  WhatsApp Image 2026-08-23 at 7.15.35 PM (1).jpeg
+  peace-28.jpg           <-  WhatsApp Image 2026-08-23 at 7.13.40 PM.jpeg
+  peace-29.jpg           <-  WhatsApp Image 2026-08-23 at 7.13.41 PM (1).jpeg
+  peace-30.jpg           <-  WhatsApp Image 2026-08-23 at 7.15.35 PM.jpeg
+  peace-principal.jpg    <-  principal.jpeg
+
+Pour changer une photo : remplace le fichier en gardant le meme nom.
+Pour en ajouter : depose-la ici puis complete la liste "photos" dans config/birthday.ts.

@@ -1,0 +1,4 @@
+🎵 Depose ici ta musique, par exemple : birthday.mp3
+
+Puis verifie le chemin dans config/birthday.ts (objet "music").
+La musique ne demarre jamais automatiquement : le visiteur clique sur le bouton flottant.

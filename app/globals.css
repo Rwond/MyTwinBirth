@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --red: #dc2626;
+  --red-dark: #7f1d1d;
+  --red-deep: #450a0a;
+  --black: #050505;
+  --coal: #111111;
+  --white: #ffffff;
+  --gold: #f59e0b;
+  --gold-soft: #fcd34d;
+}
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--black);
+  }
+
+  body {
+    background-color: var(--black);
+    color: var(--white);
+    overflow-x: hidden;
+    font-family: var(--font-body), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Le curseur personnalisé remplace le curseur natif (desktop uniquement) */
+  @media (hover: hover) and (pointer: fine) {
+    body.custom-cursor,
+    body.custom-cursor * {
+      cursor: none !important;
+    }
+  }
+
+  ::selection {
+    background: var(--red);
+    color: #fff;
+  }
+
+  /* Barre de défilement royale */
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--red), var(--gold));
+    border-radius: 9px;
+  }
+}
+
+@layer components {
+  /* --- Textes --- */
+  .text-gold-gradient {
+    background: linear-gradient(
+      100deg,
+      #f59e0b 0%,
+      #fef3c7 22%,
+      #f59e0b 42%,
+      #b45309 60%,
+      #fcd34d 80%,
+      #f59e0b 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmerText 6s linear infinite;
+  }
+
+  .text-red-gradient {
+    background: linear-gradient(100deg, #ef4444, #fff 45%, #dc2626 70%, #7f1d1d);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmerText 7s linear infinite;
+  }
+
+  @keyframes shimmerText {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+  .glow-red {
+    text-shadow: 0 0 18px rgba(220, 38, 38, 0.75), 0 0 46px rgba(220, 38, 38, 0.4);
+  }
+
+  .glow-gold {
+    text-shadow: 0 0 16px rgba(245, 158, 11, 0.7), 0 0 44px rgba(245, 158, 11, 0.35);
+  }
+
+  .glow-white {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+
+  /* --- Cadres & cartes --- */
+  .royal-frame {
+    position: relative;
+    background: linear-gradient(145deg, rgba(245, 158, 11, 0.95), rgba(180, 83, 9, 0.55) 40%, rgba(252, 211, 77, 0.95));
+    padding: 3px;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 45px rgba(220, 38, 38, 0.4), 0 0 90px rgba(245, 158, 11, 0.15),
+      inset 0 0 12px rgba(255, 255, 255, 0.25);
+  }
+
+  .royal-card {
+    background: linear-gradient(160deg, rgba(17, 17, 17, 0.95), rgba(10, 10, 10, 0.98));
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-radius: 1.25rem;
+    box-shadow: 0 0 40px rgba(220, 38, 38, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .gold-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.9), transparent);
+  }
+
+  /* --- Boutons --- */
+  .btn-royal {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.95rem 2.1rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #fff;
+    background: linear-gradient(135deg, #dc2626, #7f1d1d 55%, #dc2626);
+    border: 1px solid rgba(245, 158, 11, 0.75);
+    box-shadow: 0 0 30px rgba(220, 38, 38, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .btn-royal::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.45) 50%, transparent 70%);
+    transform: translateX(-120%);
+    animation: btnSheen 3.4s ease-in-out infinite;
+  }
+
+  @keyframes btnSheen {
+    0%,
+    60% {
+      transform: translateX(-120%);
+    }
+    100% {
+      transform: translateX(120%);
+    }
+  }
+
+  .btn-royal:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 0 55px rgba(220, 38, 38, 0.8), 0 0 90px rgba(245, 158, 11, 0.3);
+  }
+
+  /* --- Fonds --- */
+  .radial-red {
+    background: radial-gradient(ellipse at center, rgba(220, 38, 38, 0.28) 0%, rgba(5, 5, 5, 0) 62%);
+  }
+
+  .vignette::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse at center, transparent 45%, rgba(0, 0, 0, 0.85) 100%);
+  }
+
+  .noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  }
+
+  /* Barre de progression du film */
+  @keyframes filmProgress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  .section-pad {
+    padding-top: clamp(4.5rem, 12vh, 9rem);
+    padding-bottom: clamp(4.5rem, 12vh, 9rem);
+  }
+}
+
+/* Accessibilité : on calme tout si l'utilisateur le demande */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
